@@ -22,6 +22,9 @@
 		837FB00B23DF950E000C854E /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837FB00923DF950E000C854E /* Gilroy-Medium.ttf */; };
 		837FB00C23DF950E000C854E /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837FB00A23DF950E000C854E /* Gilroy-Bold.ttf */; };
 		837FB00F23DF9C24000C854E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837FB00E23DF9C24000C854E /* Extensions.swift */; };
+		83E9610723FDE2B4005966A7 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9610623FDE2B4005966A7 /* ForgotPassword.swift */; };
+		83E9610923FDE2CA005966A7 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9610823FDE2CA005966A7 /* SignUp.swift */; };
+		83E9610B23FDE2E2005966A7 /* ActivateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9610A23FDE2E2005966A7 /* ActivateAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		837FB00923DF950E000C854E /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		837FB00A23DF950E000C854E /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		837FB00E23DF9C24000C854E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		83E9610623FDE2B4005966A7 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		83E9610823FDE2CA005966A7 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		83E9610A23FDE2E2005966A7 /* ActivateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				83408AD823EDE60500EBC193 /* MealSearcher.swift */,
+				83E9610623FDE2B4005966A7 /* ForgotPassword.swift */,
+				83E9610823FDE2CA005966A7 /* SignUp.swift */,
+				83E9610A23FDE2E2005966A7 /* ActivateAccount.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,11 +336,14 @@
 				83408AD623EDA83C00EBC193 /* CustomViewStuff.swift in Sources */,
 				837FB00F23DF9C24000C854E /* Extensions.swift in Sources */,
 				836FDCE423DE0EA400FFFF1A /* AppDelegate.swift in Sources */,
+				83E9610B23FDE2E2005966A7 /* ActivateAccount.swift in Sources */,
 				83408AD923EDE60600EBC193 /* MealSearcher.swift in Sources */,
 				836FD11C23F0E5AF0059A04B /* Meal.swift in Sources */,
 				836FDCE623DE0EA400FFFF1A /* SceneDelegate.swift in Sources */,
 				836FDCEB23DE0EA400FFFF1A /* LoginScreen.swift in Sources */,
 				836FDCE923DE0EA400FFFF1A /* foodie.xcdatamodeld in Sources */,
+				83E9610723FDE2B4005966A7 /* ForgotPassword.swift in Sources */,
+				83E9610923FDE2CA005966A7 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

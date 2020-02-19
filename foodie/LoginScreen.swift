@@ -13,6 +13,7 @@ struct LoginScreen: View {
     var body: some View {
         
         NavigationView{
+            
             VStack{
                 LoginImageView()
                 Spacer()
@@ -30,7 +31,8 @@ struct LoginScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen()
+        ActivateAccount()
+//        LoginScreen()
 //        SignUpView()
 //        RecoverPasswordView()
     }
@@ -67,6 +69,8 @@ struct LoginForm: View {
                 
                 HStack{
                     Spacer()
+                    
+                    
                     
                         NavigationLink(destination:MealSearcher()){
                             Text("Forgot Password").font(.custom("Gilroy-Bold", size: 14)).foregroundColor(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))

@@ -32,7 +32,7 @@ struct MealSearcher_Previews: PreviewProvider {
 struct LogoBar:View{
     var body:some View{
         HStack{
-            Text("-\n-")
+            
             HStack{
                 Spacer()
                 Image("foodie-logo-lg")
