@@ -11,12 +11,15 @@ import SwiftUI
 struct LoginScreen: View {
     
     var body: some View {
-
-        VStack{
-            LoginImageView()
-            Spacer()
-            LoginForm()
-        }.edgesIgnoringSafeArea(.top)
+        
+        NavigationView{
+            VStack{
+                LoginImageView()
+                Spacer()
+                LoginForm()
+            }.edgesIgnoringSafeArea(.top)
+        }
+        
         
         
         
@@ -64,7 +67,13 @@ struct LoginForm: View {
                 
                 HStack{
                     Spacer()
-                    Text("Forgot Password").font(.custom("Gilroy-Bold", size: 14)).foregroundColor(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))
+                    
+                        NavigationLink(destination:MealSearcher()){
+                            Text("Forgot Password").font(.custom("Gilroy-Bold", size: 14)).foregroundColor(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))
+                        }
+                        
+                    
+                    
                 }.padding(.bottom)
                 
                     VStack(alignment:.center){
@@ -78,7 +87,7 @@ struct LoginForm: View {
                     
                     
                 
-                
+                Spacer()
                 
                 HStack(alignment: .center){
                     Spacer()

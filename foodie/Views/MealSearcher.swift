@@ -32,10 +32,14 @@ struct MealSearcher_Previews: PreviewProvider {
 struct LogoBar:View{
     var body:some View{
         HStack{
-            Text("-")
+            Text("-\n-")
             HStack{
                 Spacer()
-                Text("Foodie").font(.custom("Gilroy-Bold", size: 30)).foregroundColor(.black)
+                Image("foodie-logo-lg")
+                .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 25.0)
+                
                 Spacer()
             }
         }
