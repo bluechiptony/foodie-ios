@@ -9,30 +9,41 @@
 import SwiftUI
 
 struct LoginScreen: View {
+    @State var loggedIn:Bool = false;
+    @ObservedObject var loginState  = LoginState()
     
     var body: some View {
-        
-        NavigationView{
-            
-            VStack{
-                LoginImageView()
-                Spacer()
-                LoginForm()
-            }.edgesIgnoringSafeArea(.top)
+        VStack{
+            if self.loginState.loggedIn {
+                MealSearcher()
+            }else{
+                HolderView()
+            }
         }
-        
-        
-        
         
     }
     
     
 }
 
+
+struct HolderView:View {
+    
+    var body: some View{
+            NavigationView{
+                VStack{
+                    LoginImageView()
+                    Spacer()
+                    LoginForm()
+                    }.edgesIgnoringSafeArea(.top).navigationBarHidden(true)
+            }
+        }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivateAccount()
-//        LoginScreen()
+//        ActivateAccount()
+        LoginScreen()
 //        SignUpView()
 //        RecoverPasswordView()
     }
@@ -52,7 +63,7 @@ struct LoginForm: View {
     var body: some View {
         GeometryReader{geometry in
             VStack(alignment: .leading){
-                Text("Login").font(.custom("Gilroy-Bold", size: 35)).foregroundColor(.black)
+                Text("Login").font(.custom("Gilroy-Bold", size: 35)).foregroundColor(.black).padding(.top)
                 
                 Text("Enter your login credentials")
                     .foregroundColor(Color.gray)
@@ -69,17 +80,10 @@ struct LoginForm: View {
                 
                 HStack{
                     Spacer()
-                    
-                    
-                    
                         NavigationLink(destination:MealSearcher()){
                             Text("Forgot Password").font(.custom("Gilroy-Bold", size: 14)).foregroundColor(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))
                         }
-                        
-                    
-                    
                 }.padding(.bottom)
-                
                     VStack(alignment:.center){
                     
                             Button("Login", action: self.login).padding()
@@ -88,18 +92,18 @@ struct LoginForm: View {
                             .foregroundColor(.white).cornerRadius(5).font(.custom("Gilroy-Bold", size: 20))
                             
                     }.padding([.top, .bottom], 15)
-                    
-                    
-                
+
                 Spacer()
-                
                 HStack(alignment: .center){
                     Spacer()
                     
                         Text("Dont have an account?").font(.custom("Gilroy-Bold", size: 14)).foregroundColor(.gray)
+                    NavigationLink(destination:SignUp()){
                         
                         Text("Sign up").font(.custom("Gilroy-Bold", size: 14)).foregroundColor(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))
-                    
+                        
+                    }
+                        
                     Spacer()
                     
                 }

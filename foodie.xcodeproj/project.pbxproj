@@ -25,6 +25,7 @@
 		83E9610723FDE2B4005966A7 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9610623FDE2B4005966A7 /* ForgotPassword.swift */; };
 		83E9610923FDE2CA005966A7 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9610823FDE2CA005966A7 /* SignUp.swift */; };
 		83E9610B23FDE2E2005966A7 /* ActivateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9610A23FDE2E2005966A7 /* ActivateAccount.swift */; };
+		83E9610D23FE668D005966A7 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9610C23FE668C005966A7 /* LoginState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		83E9610623FDE2B4005966A7 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		83E9610823FDE2CA005966A7 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		83E9610A23FDE2E2005966A7 /* ActivateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateAccount.swift; sourceTree = "<group>"; };
+		83E9610C23FE668C005966A7 /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				836FD11B23F0E5AF0059A04B /* Meal.swift */,
+				83E9610C23FE668C005966A7 /* LoginState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83408AD623EDA83C00EBC193 /* CustomViewStuff.swift in Sources */,
+				83E9610D23FE668D005966A7 /* LoginState.swift in Sources */,
 				837FB00F23DF9C24000C854E /* Extensions.swift in Sources */,
 				836FDCE423DE0EA400FFFF1A /* AppDelegate.swift in Sources */,
 				83E9610B23FDE2E2005966A7 /* ActivateAccount.swift in Sources */,
