@@ -17,7 +17,7 @@ struct LoginScreen: View {
             if self.loginState.loggedIn {
                 MealSearcher()
             }else{
-                HolderView()
+                HolderView(loginState: loginState)
             }
         }
         
@@ -28,13 +28,13 @@ struct LoginScreen: View {
 
 
 struct HolderView:View {
-    
+    @ObservedObject var loginState:LoginState;
     var body: some View{
             NavigationView{
                 VStack{
                     LoginImageView()
                     Spacer()
-                    LoginForm()
+                    LoginForm(loginState: loginState)
                     }.edgesIgnoringSafeArea(.top).navigationBarHidden(true)
             }
         }
@@ -60,6 +60,7 @@ struct LoginImageView: View {
 struct LoginForm: View {
     @State var email:String = ""
     @State var password:String = ""
+    @ObservedObject var loginState:LoginState
     var body: some View {
         GeometryReader{geometry in
             VStack(alignment: .leading){
@@ -114,6 +115,7 @@ struct LoginForm: View {
     func login() -> Void {
         print(self.$email.projectedValue)
         print(self.$password.projectedValue)
+        self.loginState.setLoggedIn(logged: true);
         
     }
 }

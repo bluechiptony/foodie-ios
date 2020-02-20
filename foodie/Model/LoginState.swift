@@ -9,17 +9,21 @@
 import Foundation
 
 class LoginState: ObservableObject {
-    @Published var loggedIn:Bool;
+    @Published var loggedIn:Bool ;
     
     
     init() {
-        self.loggedIn = true
+        self.loggedIn = false;
+        self.loggedIn = self.checkLoggedInState();
     }
     
     func setLoggedIn(logged:Bool) -> Void {
         self.loggedIn = logged
     }
     
+    func checkLoggedInState() -> Bool {
+        return false;
+    }
     
     
 }
