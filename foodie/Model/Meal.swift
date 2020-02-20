@@ -28,4 +28,5 @@ struct Vendor {
     var vendorId:Int
     var vendorName:String
     var address:String
+    var logo:String
 }

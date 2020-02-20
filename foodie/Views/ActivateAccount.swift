@@ -52,7 +52,7 @@ struct ActivationForm:View{
                 .padding([.top, .leading, .bottom])
                 .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             
-                    Button("Activate Account", action: self.login).padding()
+                    Button("Activate Account", action: self.sendActivationRequest).padding()
                         
                         .background(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))
                     .foregroundColor(.white).cornerRadius(5).font(.custom("Gilroy-Bold", size: 20))
@@ -64,7 +64,7 @@ struct ActivationForm:View{
         
     }
     
-    func login() -> Void{
+    func sendActivationRequest() -> Void{
         
     }
 }

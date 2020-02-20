@@ -48,12 +48,13 @@ struct SignUpFormControlView:View{
             TextField("Full Name e.g Jon Snow", text: self.$name)
                            .padding([.top, .leading, .bottom])
             .textFieldStyle(PlainTextFieldStyle())
-                
-//                .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+//                Divider()
+                .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                 
             TextField("Email address", text: self.$email)
                 .padding([.top, .leading, .bottom])
                 .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+//            Divider()
             
             TextField("Phone number", text: self.$phone)
                            .padding([.top, .leading, .bottom])
