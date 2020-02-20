@@ -81,7 +81,7 @@ struct LoginForm: View {
                 
                 HStack{
                     Spacer()
-                        NavigationLink(destination:MealSearcher()){
+                        NavigationLink(destination:ForgotPassword()){
                             Text("Forgot Password").font(.custom("Gilroy-Bold", size: 14)).foregroundColor(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))
                         }
                 }.padding(.bottom)

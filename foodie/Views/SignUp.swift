@@ -14,8 +14,8 @@ struct SignUp: View {
             LogoBar()
             SignUpInstruction()
             SignUpFormControlView()
-            Spacer()
-            AuthGoBack()
+//            Spacer()
+//            AuthGoBack()
         }.padding()
     }
 }
@@ -47,9 +47,10 @@ struct SignUpFormControlView:View{
 
             TextField("Full Name e.g Jon Snow", text: self.$name)
                            .padding([.top, .leading, .bottom])
-                .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                .border(/*@START_MENU_TOKEN@*/Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-        
+            .textFieldStyle(PlainTextFieldStyle())
+                
+//                .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                
             TextField("Email address", text: self.$email)
                 .padding([.top, .leading, .bottom])
                 .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)

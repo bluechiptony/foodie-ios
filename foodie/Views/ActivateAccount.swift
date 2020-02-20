@@ -14,7 +14,7 @@ struct ActivateAccount: View {
         VStack{
             LogoBar()
             ActivationForm()
-            Spacer()
+//            Spacer()
         }.padding()
         
     }
@@ -37,7 +37,7 @@ struct ActivateAccount_Previews: PreviewProvider {
 struct ActivationForm:View{
     @State var email:String = ""
     var body:some View{
-        GeometryReader{geometry in
+        
         VStack{
             Text("Activate your account").font(.custom("Gilroy-Bold", size: 25)).foregroundColor(.black)
             
@@ -53,7 +53,7 @@ struct ActivationForm:View{
                 .border(Color(red: 0/255, green: 0/255, blue: 0/255, opacity: 0.2), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             
                     Button("Activate Account", action: self.login).padding()
-                        .frame(width:geometry.size.width)
+                        
                         .background(Color(red: 249/255, green: 91/255, blue: 41/255, opacity: 1.0))
                     .foregroundColor(.white).cornerRadius(5).font(.custom("Gilroy-Bold", size: 20))
                     
@@ -61,7 +61,7 @@ struct ActivationForm:View{
             
             }
             
-        }
+        
     }
     
     func login() -> Void{
